@@ -1,0 +1,293 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		42740DD31ECF96AE00422A04 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42740DD21ECF96AE00422A04 /* Cocoa.framework */; };
+		42740DDD1ECF96AE00422A04 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 42740DDB1ECF96AE00422A04 /* InfoPlist.strings */; };
+		42740DDF1ECF96AE00422A04 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 42740DDE1ECF96AE00422A04 /* main.m */; };
+		42740DE31ECF96AE00422A04 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 42740DE11ECF96AE00422A04 /* Credits.rtf */; };
+		42740DE61ECF96AE00422A04 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 42740DE51ECF96AE00422A04 /* AppDelegate.m */; };
+		42740DE91ECF96AE00422A04 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42740DE71ECF96AE00422A04 /* MainMenu.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		42740DCE1ECF96AE00422A04 /* MacpViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MacpViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		42740DD21ECF96AE00422A04 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		42740DD51ECF96AE00422A04 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		42740DD61ECF96AE00422A04 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		42740DD71ECF96AE00422A04 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		42740DDA1ECF96AE00422A04 /* MacpViewer-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MacpViewer-Info.plist"; sourceTree = "<group>"; };
+		42740DDC1ECF96AE00422A04 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		42740DDE1ECF96AE00422A04 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		42740DE01ECF96AE00422A04 /* MacpViewer-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MacpViewer-Prefix.pch"; sourceTree = "<group>"; };
+		42740DE21ECF96AE00422A04 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		42740DE41ECF96AE00422A04 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		42740DE51ECF96AE00422A04 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		42740DE81ECF96AE00422A04 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		42740DCB1ECF96AE00422A04 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42740DD31ECF96AE00422A04 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		42740DC31ECF96AE00422A04 = {
+			isa = PBXGroup;
+			children = (
+				42740DD81ECF96AE00422A04 /* MacpViewer */,
+				42740DD11ECF96AE00422A04 /* Frameworks */,
+				42740DCF1ECF96AE00422A04 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		42740DCF1ECF96AE00422A04 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				42740DCE1ECF96AE00422A04 /* MacpViewer.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		42740DD11ECF96AE00422A04 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				42740DD21ECF96AE00422A04 /* Cocoa.framework */,
+				42740DD41ECF96AE00422A04 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		42740DD41ECF96AE00422A04 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				42740DD51ECF96AE00422A04 /* AppKit.framework */,
+				42740DD61ECF96AE00422A04 /* CoreData.framework */,
+				42740DD71ECF96AE00422A04 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		42740DD81ECF96AE00422A04 /* MacpViewer */ = {
+			isa = PBXGroup;
+			children = (
+				42740DE41ECF96AE00422A04 /* AppDelegate.h */,
+				42740DE51ECF96AE00422A04 /* AppDelegate.m */,
+				42740DE71ECF96AE00422A04 /* MainMenu.xib */,
+				42740DD91ECF96AE00422A04 /* Supporting Files */,
+			);
+			path = MacpViewer;
+			sourceTree = "<group>";
+		};
+		42740DD91ECF96AE00422A04 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				42740DDA1ECF96AE00422A04 /* MacpViewer-Info.plist */,
+				42740DDB1ECF96AE00422A04 /* InfoPlist.strings */,
+				42740DDE1ECF96AE00422A04 /* main.m */,
+				42740DE01ECF96AE00422A04 /* MacpViewer-Prefix.pch */,
+				42740DE11ECF96AE00422A04 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		42740DCD1ECF96AE00422A04 /* MacpViewer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 42740DEC1ECF96AE00422A04 /* Build configuration list for PBXNativeTarget "MacpViewer" */;
+			buildPhases = (
+				42740DCA1ECF96AE00422A04 /* Sources */,
+				42740DCB1ECF96AE00422A04 /* Frameworks */,
+				42740DCC1ECF96AE00422A04 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MacpViewer;
+			productName = MacpViewer;
+			productReference = 42740DCE1ECF96AE00422A04 /* MacpViewer.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		42740DC51ECF96AE00422A04 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = 42740DC81ECF96AE00422A04 /* Build configuration list for PBXProject "MacpViewer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 42740DC31ECF96AE00422A04;
+			productRefGroup = 42740DCF1ECF96AE00422A04 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				42740DCD1ECF96AE00422A04 /* MacpViewer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		42740DCC1ECF96AE00422A04 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42740DDD1ECF96AE00422A04 /* InfoPlist.strings in Resources */,
+				42740DE31ECF96AE00422A04 /* Credits.rtf in Resources */,
+				42740DE91ECF96AE00422A04 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		42740DCA1ECF96AE00422A04 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42740DDF1ECF96AE00422A04 /* main.m in Sources */,
+				42740DE61ECF96AE00422A04 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		42740DDB1ECF96AE00422A04 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				42740DDC1ECF96AE00422A04 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		42740DE11ECF96AE00422A04 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				42740DE21ECF96AE00422A04 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		42740DE71ECF96AE00422A04 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				42740DE81ECF96AE00422A04 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		42740DEA1ECF96AE00422A04 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		42740DEB1ECF96AE00422A04 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		42740DED1ECF96AE00422A04 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MacpViewer/MacpViewer-Prefix.pch";
+				INFOPLIST_FILE = "MacpViewer/MacpViewer-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		42740DEE1ECF96AE00422A04 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MacpViewer/MacpViewer-Prefix.pch";
+				INFOPLIST_FILE = "MacpViewer/MacpViewer-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		42740DC81ECF96AE00422A04 /* Build configuration list for PBXProject "MacpViewer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				42740DEA1ECF96AE00422A04 /* Debug */,
+				42740DEB1ECF96AE00422A04 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		42740DEC1ECF96AE00422A04 /* Build configuration list for PBXNativeTarget "MacpViewer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				42740DED1ECF96AE00422A04 /* Debug */,
+				42740DEE1ECF96AE00422A04 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 42740DC51ECF96AE00422A04 /* Project object */;
+}
