@@ -23,7 +23,7 @@
     
     [windowController showWindow:self];
     
-    [self.window cascadeTopLeftFromPoint:NSMakePoint(20, 20)];
+    [self.window cascadeTopLeftFromPoint:NSMakePoint(320, 240)];
 }
 
 @end

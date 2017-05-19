@@ -10,6 +10,6 @@
 #import <Quartz/Quartz.h>
 
 @interface ImageViewController : NSWindowController
-@property (nonatomic, assign)   IBOutlet IKImageBrowserView *imageBrowserView;
+@property (nonatomic, assign) IBOutlet IKImageBrowserView *imageBrowserView;
 
 @end

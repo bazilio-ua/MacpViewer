@@ -13,6 +13,7 @@
 		42740DE31ECF96AE00422A04 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 42740DE11ECF96AE00422A04 /* Credits.rtf */; };
 		42740DE61ECF96AE00422A04 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 42740DE51ECF96AE00422A04 /* AppDelegate.m */; };
 		42740DE91ECF96AE00422A04 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42740DE71ECF96AE00422A04 /* MainMenu.xib */; };
+		42C0ADB21ECFB940004DFF33 /* Quartz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42C0ADB11ECFB940004DFF33 /* Quartz.framework */; };
 		42E91B111ECFA72C00AEF125 /* ImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42E91B101ECFA72C00AEF125 /* ImageViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -20,7 +21,6 @@
 		42740DCE1ECF96AE00422A04 /* MacpViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MacpViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		42740DD21ECF96AE00422A04 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		42740DD51ECF96AE00422A04 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
-		42740DD61ECF96AE00422A04 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		42740DD71ECF96AE00422A04 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		42740DDA1ECF96AE00422A04 /* MacpViewer-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MacpViewer-Info.plist"; sourceTree = "<group>"; };
 		42740DDC1ECF96AE00422A04 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -30,7 +30,8 @@
 		42740DE41ECF96AE00422A04 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		42740DE51ECF96AE00422A04 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		42740DE81ECF96AE00422A04 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
-		42E91B0F1ECFA72C00AEF125 /* ImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; path = ImageViewController.h; sourceTree = "<group>"; };
+		42C0ADB11ECFB940004DFF33 /* Quartz.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quartz.framework; path = System/Library/Frameworks/Quartz.framework; sourceTree = SDKROOT; };
+		42E91B0F1ECFA72C00AEF125 /* ImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageViewController.h; sourceTree = "<group>"; };
 		42E91B101ECFA72C00AEF125 /* ImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -39,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42C0ADB21ECFB940004DFF33 /* Quartz.framework in Frameworks */,
 				42740DD31ECF96AE00422A04 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -75,8 +77,8 @@
 		42740DD41ECF96AE00422A04 /* Other Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				42C0ADB11ECFB940004DFF33 /* Quartz.framework */,
 				42740DD51ECF96AE00422A04 /* AppKit.framework */,
-				42740DD61ECF96AE00422A04 /* CoreData.framework */,
 				42740DD71ECF96AE00422A04 /* Foundation.framework */,
 			);
 			name = "Other Frameworks";
