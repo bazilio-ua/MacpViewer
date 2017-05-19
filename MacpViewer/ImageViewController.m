@@ -44,11 +44,10 @@
 }
 
 #pragma mark -
-#pragma mark IKImageBrowserDelegate protocol
+#pragma mark IKImageBrowserDelegate
 
 #pragma mark -
-#pragma mark IKImageBrowserDataSource protocol
-
+#pragma mark IKImageBrowserDataSource
 
 #pragma mark -
 #pragma mark NSDraggingDestination delegate
