@@ -7,19 +7,23 @@
 //
 
 #import "AppDelegate.h"
+#import "ImageViewController.h"
 
 @implementation AppDelegate
 
 @synthesize window = _window;
 
-- (void)dealloc
-{
+- (void)dealloc {
     [super dealloc];
 }
 	
-- (void)applicationDidFinishLaunching:(NSNotification *)aNotification
-{
+- (void)applicationDidFinishLaunching:(NSNotification *)notification {
     // Insert code here to initialize your application
+    ImageViewController *windowController = [[ImageViewController alloc] initWithWindow:self.window];
+    
+    [windowController showWindow:self];
+    
+    [self.window cascadeTopLeftFromPoint:NSMakePoint(20, 20)];
 }
 
 @end
