@@ -13,6 +13,7 @@
 		42740DE31ECF96AE00422A04 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 42740DE11ECF96AE00422A04 /* Credits.rtf */; };
 		42740DE61ECF96AE00422A04 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 42740DE51ECF96AE00422A04 /* AppDelegate.m */; };
 		42740DE91ECF96AE00422A04 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42740DE71ECF96AE00422A04 /* MainMenu.xib */; };
+		427B52791ED0124F003225F8 /* ImageItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 427B52781ED0124F003225F8 /* ImageItem.m */; };
 		42C0ADB21ECFB940004DFF33 /* Quartz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42C0ADB11ECFB940004DFF33 /* Quartz.framework */; };
 		42E91B111ECFA72C00AEF125 /* ImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42E91B101ECFA72C00AEF125 /* ImageViewController.m */; };
 /* End PBXBuildFile section */
@@ -30,6 +31,8 @@
 		42740DE41ECF96AE00422A04 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		42740DE51ECF96AE00422A04 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		42740DE81ECF96AE00422A04 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		427B52771ED0124F003225F8 /* ImageItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageItem.h; sourceTree = "<group>"; };
+		427B52781ED0124F003225F8 /* ImageItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageItem.m; sourceTree = "<group>"; };
 		42C0ADB11ECFB940004DFF33 /* Quartz.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quartz.framework; path = System/Library/Frameworks/Quartz.framework; sourceTree = SDKROOT; };
 		42E91B0F1ECFA72C00AEF125 /* ImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageViewController.h; sourceTree = "<group>"; };
 		42E91B101ECFA72C00AEF125 /* ImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageViewController.m; sourceTree = "<group>"; };
@@ -92,6 +95,8 @@
 				42740DE71ECF96AE00422A04 /* MainMenu.xib */,
 				42E91B0F1ECFA72C00AEF125 /* ImageViewController.h */,
 				42E91B101ECFA72C00AEF125 /* ImageViewController.m */,
+				427B52771ED0124F003225F8 /* ImageItem.h */,
+				427B52781ED0124F003225F8 /* ImageItem.m */,
 				42740DD91ECF96AE00422A04 /* Supporting Files */,
 			);
 			path = MacpViewer;
@@ -175,6 +180,7 @@
 				42740DDF1ECF96AE00422A04 /* main.m in Sources */,
 				42740DE61ECF96AE00422A04 /* AppDelegate.m in Sources */,
 				42E91B111ECFA72C00AEF125 /* ImageViewController.m in Sources */,
+				427B52791ED0124F003225F8 /* ImageItem.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -9,5 +9,9 @@
 #import <Foundation/Foundation.h>
 
 @interface ImageItem : NSObject
+@property (nonatomic, copy) NSString *filePath;
+
++ (id)imageWithFilePath:(NSString *)filePath;
+- (id)initWithFilePath:(NSString *)filePath;
 
 @end
