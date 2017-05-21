@@ -1,5 +1,5 @@
 //
-//  ImageViewController.h
+//  ImageBrowserViewController.h
 //  MacpViewer
 //
 //  Created by Basil Nikityuk on 5/20/17.
@@ -9,7 +9,7 @@
 #import <Cocoa/Cocoa.h>
 #import <Quartz/Quartz.h>
 
-@interface ImageViewController : NSWindowController
-@property (nonatomic, assign) IBOutlet IKImageBrowserView *imageBrowserView;
+@interface ImageBrowserViewController : NSWindowController <NSWindowDelegate>
+@property (nonatomic, assign) IBOutlet IKImageBrowserView *browserView;
 
 @end

@@ -8,13 +8,13 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          isPathRelative = "1"
-         filePath = "MacpViewer/ImageWindowController.m"
-         timestampString = "516927220.813405"
+         filePath = "MacpViewer/ImageBrowserViewController.m"
+         timestampString = "517099197.046623"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "16"
-         endingLineNumber = "16"
-         landmarkName = "-initWithWindow:"
+         startingLineNumber = "65"
+         endingLineNumber = "65"
+         landmarkName = "-addImageWithFilePath:"
          landmarkType = "5">
       </FileBreakpoint>
       <FileBreakpoint
@@ -22,13 +22,13 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          isPathRelative = "1"
-         filePath = "MacpViewer/ImageViewController.m"
-         timestampString = "516957854.223146"
+         filePath = "MacpViewer/ImageBrowserViewController.m"
+         timestampString = "517099197.046623"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "87"
-         endingLineNumber = "87"
-         landmarkName = "-imageBrowser:itemAtIndex:"
+         startingLineNumber = "141"
+         endingLineNumber = "141"
+         landmarkName = "-draggingEntered:"
          landmarkType = "5">
       </FileBreakpoint>
       <FileBreakpoint
@@ -36,40 +36,12 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          isPathRelative = "1"
-         filePath = "MacpViewer/ImageViewController.m"
-         timestampString = "516957854.223146"
+         filePath = "MacpViewer/ImageBrowserViewController.m"
+         timestampString = "517099197.046623"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "91"
-         endingLineNumber = "91"
-         landmarkName = "@implementation ImageViewController"
-         landmarkType = "3">
-      </FileBreakpoint>
-      <FileBreakpoint
-         shouldBeEnabled = "No"
-         ignoreCount = "0"
-         continueAfterRunningActions = "No"
-         isPathRelative = "1"
-         filePath = "MacpViewer/ImageViewController.m"
-         timestampString = "516957854.223146"
-         startingColumnNumber = "9223372036854775807"
-         endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "95"
-         endingLineNumber = "95"
-         landmarkName = "@implementation ImageViewController"
-         landmarkType = "3">
-      </FileBreakpoint>
-      <FileBreakpoint
-         shouldBeEnabled = "No"
-         ignoreCount = "0"
-         continueAfterRunningActions = "No"
-         isPathRelative = "1"
-         filePath = "MacpViewer/ImageViewController.m"
-         timestampString = "516959303.020674"
-         startingColumnNumber = "9223372036854775807"
-         endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "127"
-         endingLineNumber = "127"
+         startingLineNumber = "145"
+         endingLineNumber = "145"
          landmarkName = "-draggingUpdated:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -78,13 +50,55 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          isPathRelative = "1"
-         filePath = "MacpViewer/ImageViewController.m"
-         timestampString = "516957946.781869"
+         filePath = "MacpViewer/ImageBrowserViewController.m"
+         timestampString = "517099197.046623"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "62"
-         endingLineNumber = "62"
-         landmarkName = "-addImageWithFilePath:"
+         startingLineNumber = "149"
+         endingLineNumber = "149"
+         landmarkName = "-draggingEnded:"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         isPathRelative = "1"
+         filePath = "MacpViewer/ImageBrowserViewController.m"
+         timestampString = "517099197.046623"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "153"
+         endingLineNumber = "153"
+         landmarkName = "-performDragOperation:"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "Yes"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         isPathRelative = "1"
+         filePath = "MacpViewer/AppDelegate.m"
+         timestampString = "517098493.068258"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "29"
+         endingLineNumber = "29"
+         landmarkName = "-applicationDidFinishLaunching:"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "Yes"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         isPathRelative = "1"
+         filePath = "MacpViewer/ImageBrowserViewController.m"
+         timestampString = "517099197.046623"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "48"
+         endingLineNumber = "48"
+         landmarkName = "-awakeFromNib"
          landmarkType = "5">
       </FileBreakpoint>
    </FileBreakpoints>

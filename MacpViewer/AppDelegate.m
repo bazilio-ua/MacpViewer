@@ -7,23 +7,33 @@
 //
 
 #import "AppDelegate.h"
-#import "ImageViewController.h"
+#import "ImageBrowserViewController.h"
+
+@interface AppDelegate ()
+@property (nonatomic, retain) ImageBrowserViewController *controller;
+
+@end
 
 @implementation AppDelegate
 
 @synthesize window = _window;
+@synthesize controller = _controller;
 
 - (void)dealloc {
+    [self.controller release];
+    
     [super dealloc];
 }
-	
+
 - (void)applicationDidFinishLaunching:(NSNotification *)notification {
     // Insert code here to initialize your application
-    ImageViewController *windowController = [[ImageViewController alloc] initWithWindow:self.window];
+    ImageBrowserViewController *controller = [[ImageBrowserViewController alloc] initWithWindow:self.window];
+    self.controller = controller;
+//    [controller window];
+    [controller showWindow:self];
+    [self.window setDelegate:controller];
     
-    [windowController showWindow:self];
-    
-    [self.window cascadeTopLeftFromPoint:NSMakePoint(320, 240)];
+//    [self.window cascadeTopLeftFromPoint:NSMakePoint(320, 240)];
 }
 
 @end

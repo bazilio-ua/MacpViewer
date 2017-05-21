@@ -7,18 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4231FE621ED24B1B00E76342 /* ImageBrowserViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4231FE611ED24B1B00E76342 /* ImageBrowserViewController.xib */; };
 		42740DD31ECF96AE00422A04 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42740DD21ECF96AE00422A04 /* Cocoa.framework */; };
 		42740DDD1ECF96AE00422A04 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 42740DDB1ECF96AE00422A04 /* InfoPlist.strings */; };
 		42740DDF1ECF96AE00422A04 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 42740DDE1ECF96AE00422A04 /* main.m */; };
 		42740DE31ECF96AE00422A04 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 42740DE11ECF96AE00422A04 /* Credits.rtf */; };
 		42740DE61ECF96AE00422A04 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 42740DE51ECF96AE00422A04 /* AppDelegate.m */; };
-		42740DE91ECF96AE00422A04 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42740DE71ECF96AE00422A04 /* MainMenu.xib */; };
 		427B52791ED0124F003225F8 /* ImageItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 427B52781ED0124F003225F8 /* ImageItem.m */; };
 		42C0ADB21ECFB940004DFF33 /* Quartz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42C0ADB11ECFB940004DFF33 /* Quartz.framework */; };
-		42E91B111ECFA72C00AEF125 /* ImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42E91B101ECFA72C00AEF125 /* ImageViewController.m */; };
+		42E91B111ECFA72C00AEF125 /* ImageBrowserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42E91B101ECFA72C00AEF125 /* ImageBrowserViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4231FE611ED24B1B00E76342 /* ImageBrowserViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ImageBrowserViewController.xib; sourceTree = "<group>"; };
 		42740DCE1ECF96AE00422A04 /* MacpViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MacpViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		42740DD21ECF96AE00422A04 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		42740DD51ECF96AE00422A04 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -30,12 +31,11 @@
 		42740DE21ECF96AE00422A04 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
 		42740DE41ECF96AE00422A04 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		42740DE51ECF96AE00422A04 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		42740DE81ECF96AE00422A04 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		427B52771ED0124F003225F8 /* ImageItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageItem.h; sourceTree = "<group>"; };
 		427B52781ED0124F003225F8 /* ImageItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageItem.m; sourceTree = "<group>"; };
 		42C0ADB11ECFB940004DFF33 /* Quartz.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quartz.framework; path = System/Library/Frameworks/Quartz.framework; sourceTree = SDKROOT; };
-		42E91B0F1ECFA72C00AEF125 /* ImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageViewController.h; sourceTree = "<group>"; };
-		42E91B101ECFA72C00AEF125 /* ImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageViewController.m; sourceTree = "<group>"; };
+		42E91B0F1ECFA72C00AEF125 /* ImageBrowserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageBrowserViewController.h; sourceTree = "<group>"; };
+		42E91B101ECFA72C00AEF125 /* ImageBrowserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageBrowserViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,9 +92,9 @@
 			children = (
 				42740DE41ECF96AE00422A04 /* AppDelegate.h */,
 				42740DE51ECF96AE00422A04 /* AppDelegate.m */,
-				42740DE71ECF96AE00422A04 /* MainMenu.xib */,
-				42E91B0F1ECFA72C00AEF125 /* ImageViewController.h */,
-				42E91B101ECFA72C00AEF125 /* ImageViewController.m */,
+				42E91B0F1ECFA72C00AEF125 /* ImageBrowserViewController.h */,
+				42E91B101ECFA72C00AEF125 /* ImageBrowserViewController.m */,
+				4231FE611ED24B1B00E76342 /* ImageBrowserViewController.xib */,
 				427B52771ED0124F003225F8 /* ImageItem.h */,
 				427B52781ED0124F003225F8 /* ImageItem.m */,
 				42740DD91ECF96AE00422A04 /* Supporting Files */,
@@ -166,7 +166,7 @@
 			files = (
 				42740DDD1ECF96AE00422A04 /* InfoPlist.strings in Resources */,
 				42740DE31ECF96AE00422A04 /* Credits.rtf in Resources */,
-				42740DE91ECF96AE00422A04 /* MainMenu.xib in Resources */,
+				4231FE621ED24B1B00E76342 /* ImageBrowserViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -179,7 +179,7 @@
 			files = (
 				42740DDF1ECF96AE00422A04 /* main.m in Sources */,
 				42740DE61ECF96AE00422A04 /* AppDelegate.m in Sources */,
-				42E91B111ECFA72C00AEF125 /* ImageViewController.m in Sources */,
+				42E91B111ECFA72C00AEF125 /* ImageBrowserViewController.m in Sources */,
 				427B52791ED0124F003225F8 /* ImageItem.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -201,14 +201,6 @@
 				42740DE21ECF96AE00422A04 /* en */,
 			);
 			name = Credits.rtf;
-			sourceTree = "<group>";
-		};
-		42740DE71ECF96AE00422A04 /* MainMenu.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				42740DE81ECF96AE00422A04 /* en */,
-			);
-			name = MainMenu.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -265,6 +257,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MacpViewer/MacpViewer-Prefix.pch";
 				INFOPLIST_FILE = "MacpViewer/MacpViewer-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -276,6 +269,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MacpViewer/MacpViewer-Prefix.pch";
 				INFOPLIST_FILE = "MacpViewer/MacpViewer-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
