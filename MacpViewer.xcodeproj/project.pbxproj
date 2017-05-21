@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		4231FE621ED24B1B00E76342 /* ImageBrowserViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4231FE611ED24B1B00E76342 /* ImageBrowserViewController.xib */; };
+		4231FE691ED2557700E76342 /* ImageBrowserView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4231FE681ED2557700E76342 /* ImageBrowserView.m */; };
+		42466AF91ED25F2300A9755E /* ImageBrowserCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 42466AF81ED25F2300A9755E /* ImageBrowserCell.m */; };
 		42740DD31ECF96AE00422A04 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42740DD21ECF96AE00422A04 /* Cocoa.framework */; };
 		42740DDD1ECF96AE00422A04 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 42740DDB1ECF96AE00422A04 /* InfoPlist.strings */; };
 		42740DDF1ECF96AE00422A04 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 42740DDE1ECF96AE00422A04 /* main.m */; };
@@ -19,6 +21,10 @@
 
 /* Begin PBXFileReference section */
 		4231FE611ED24B1B00E76342 /* ImageBrowserViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ImageBrowserViewController.xib; sourceTree = "<group>"; };
+		4231FE671ED2557700E76342 /* ImageBrowserView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageBrowserView.h; sourceTree = "<group>"; };
+		4231FE681ED2557700E76342 /* ImageBrowserView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageBrowserView.m; sourceTree = "<group>"; };
+		42466AF71ED25F2300A9755E /* ImageBrowserCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageBrowserCell.h; sourceTree = "<group>"; };
+		42466AF81ED25F2300A9755E /* ImageBrowserCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageBrowserCell.m; sourceTree = "<group>"; };
 		42740DCE1ECF96AE00422A04 /* MacpViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MacpViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		42740DD21ECF96AE00422A04 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		42740DD51ECF96AE00422A04 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -87,6 +93,10 @@
 		42740DD81ECF96AE00422A04 /* MacpViewer */ = {
 			isa = PBXGroup;
 			children = (
+				42466AF71ED25F2300A9755E /* ImageBrowserCell.h */,
+				42466AF81ED25F2300A9755E /* ImageBrowserCell.m */,
+				4231FE671ED2557700E76342 /* ImageBrowserView.h */,
+				4231FE681ED2557700E76342 /* ImageBrowserView.m */,
 				42E91B0F1ECFA72C00AEF125 /* ImageBrowserViewController.h */,
 				42E91B101ECFA72C00AEF125 /* ImageBrowserViewController.m */,
 				4231FE611ED24B1B00E76342 /* ImageBrowserViewController.xib */,
@@ -175,6 +185,8 @@
 				42740DDF1ECF96AE00422A04 /* main.m in Sources */,
 				42E91B111ECFA72C00AEF125 /* ImageBrowserViewController.m in Sources */,
 				427B52791ED0124F003225F8 /* ImageItem.m in Sources */,
+				4231FE691ED2557700E76342 /* ImageBrowserView.m in Sources */,
+				42466AF91ED25F2300A9755E /* ImageBrowserCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

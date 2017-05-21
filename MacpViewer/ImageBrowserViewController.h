@@ -9,7 +9,9 @@
 #import <Cocoa/Cocoa.h>
 #import <Quartz/Quartz.h>
 
-@interface ImageBrowserViewController : NSWindowController <NSWindowDelegate>
-@property (nonatomic, assign) IBOutlet IKImageBrowserView *browserView;
+#import "ImageBrowserView.h"
+
+@interface ImageBrowserViewController : NSWindowController
+@property (nonatomic, assign) IBOutlet ImageBrowserView *browserView;
 
 @end

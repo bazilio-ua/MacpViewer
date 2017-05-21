@@ -9,11 +9,11 @@
          continueAfterRunningActions = "No"
          isPathRelative = "1"
          filePath = "MacpViewer/ImageBrowserViewController.m"
-         timestampString = "517099518.427974"
+         timestampString = "517100089.224031"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "148"
-         endingLineNumber = "148"
+         startingLineNumber = "127"
+         endingLineNumber = "127"
          landmarkName = "-draggingEnded:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -23,11 +23,11 @@
          continueAfterRunningActions = "No"
          isPathRelative = "1"
          filePath = "MacpViewer/ImageBrowserViewController.m"
-         timestampString = "517099518.427974"
+         timestampString = "517100089.224031"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "152"
-         endingLineNumber = "152"
+         startingLineNumber = "131"
+         endingLineNumber = "131"
          landmarkName = "-performDragOperation:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -37,11 +37,11 @@
          continueAfterRunningActions = "No"
          isPathRelative = "1"
          filePath = "MacpViewer/ImageBrowserViewController.m"
-         timestampString = "517099518.427974"
+         timestampString = "517100089.224031"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "156"
-         endingLineNumber = "156"
+         startingLineNumber = "135"
+         endingLineNumber = "135"
          landmarkName = "-performDragOperation:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -51,11 +51,11 @@
          continueAfterRunningActions = "No"
          isPathRelative = "1"
          filePath = "MacpViewer/ImageBrowserViewController.m"
-         timestampString = "517099518.427974"
+         timestampString = "517100089.224031"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "160"
-         endingLineNumber = "160"
+         startingLineNumber = "139"
+         endingLineNumber = "139"
          landmarkName = "-performDragOperation:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -79,11 +79,11 @@
          continueAfterRunningActions = "No"
          isPathRelative = "1"
          filePath = "MacpViewer/ImageBrowserViewController.m"
-         timestampString = "517099197.046623"
+         timestampString = "517100089.224031"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "48"
-         endingLineNumber = "48"
+         startingLineNumber = "33"
+         endingLineNumber = "33"
          landmarkName = "-awakeFromNib"
          landmarkType = "5">
       </FileBreakpoint>
@@ -93,11 +93,11 @@
          continueAfterRunningActions = "No"
          isPathRelative = "1"
          filePath = "MacpViewer/ImageBrowserViewController.m"
-         timestampString = "517099514.975814"
+         timestampString = "517100089.224031"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "84"
-         endingLineNumber = "84"
+         startingLineNumber = "63"
+         endingLineNumber = "63"
          landmarkName = "-imageBrowserSelectionDidChange:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -141,6 +141,62 @@
          startingLineNumber = "65"
          endingLineNumber = "65"
          landmarkName = "-imageRepresentation"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         isPathRelative = "1"
+         filePath = "MacpViewer/ImageBrowserViewController.m"
+         timestampString = "517102951.605261"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "67"
+         endingLineNumber = "67"
+         landmarkName = "-imageBrowser:cellWasDoubleClickedAtIndex:"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         isPathRelative = "1"
+         filePath = "MacpViewer/ImageBrowserViewController.m"
+         timestampString = "517102952.687435"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "71"
+         endingLineNumber = "71"
+         landmarkName = "-imageBrowser:cellWasRightClickedAtIndex:withEvent:"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         isPathRelative = "1"
+         filePath = "MacpViewer/ImageBrowserView.m"
+         timestampString = "517103681.769184"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "13"
+         endingLineNumber = "13"
+         landmarkName = "CGColorCreateFromNSColor()"
+         landmarkType = "7">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         isPathRelative = "1"
+         filePath = "MacpViewer/ImageBrowserCell.m"
+         timestampString = "517103677.547168"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "15"
+         endingLineNumber = "15"
+         landmarkName = "-layerForType:"
          landmarkType = "5">
       </FileBreakpoint>
    </FileBreakpoints>
