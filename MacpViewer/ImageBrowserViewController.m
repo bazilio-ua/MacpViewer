@@ -44,8 +44,6 @@
     ImageItem *image = [ImageItem imageWithFilePath:filePath];
     
     [self.draggedImages addObject:image];
-    
-    [image release];
 }
 
 - (void)refreshDataSource {
@@ -93,7 +91,7 @@
 
 - (BOOL)imageBrowser:(IKImageBrowserView *)browserView moveItemsAtIndexes:(NSIndexSet *)indexes toIndex:(NSUInteger)destinationIndex {
     NSUInteger index;
-    NSMutableArray *temporaryImages = [[NSMutableArray array] autorelease];
+    NSMutableArray *temporaryImages = [NSMutableArray array];
     
     for (index = [indexes lastIndex]; index != NSNotFound; index = [indexes indexLessThanIndex:index]) {
         if (index < destinationIndex) {

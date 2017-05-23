@@ -18,14 +18,14 @@
 #pragma mark Class methods
 
 + (id)imageWithFilePath:(NSString *)filePath {
-    return [[self alloc] initWithFilePath:filePath];
+    return [[[self alloc] initWithFilePath:filePath] autorelease];
 }
 
 #pragma mark -
 #pragma mark Initialization and Deallocation
 
 - (void)dealloc {
-    [self.filePath release];
+    self.filePath = nil;
     
     [super dealloc];
 }
