@@ -11,7 +11,7 @@
 
 #import "ImageBrowserView.h"
 
-@interface ImageBrowserViewController : NSWindowController
+@interface ImageBrowserViewController : NSWindowController <NSWindowDelegate>
 @property (nonatomic, assign) IBOutlet ImageBrowserView *browserView;
 
 @end

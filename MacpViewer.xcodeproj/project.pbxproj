@@ -15,6 +15,7 @@
 		42740DDF1ECF96AE00422A04 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 42740DDE1ECF96AE00422A04 /* main.m */; };
 		42740DE31ECF96AE00422A04 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 42740DE11ECF96AE00422A04 /* Credits.rtf */; };
 		427B52791ED0124F003225F8 /* ImageItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 427B52781ED0124F003225F8 /* ImageItem.m */; };
+		429D94661ED4DCF70017C586 /* close-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 429D94651ED4DCF70017C586 /* close-icon.png */; };
 		42C0ADB21ECFB940004DFF33 /* Quartz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42C0ADB11ECFB940004DFF33 /* Quartz.framework */; };
 		42E91B111ECFA72C00AEF125 /* ImageBrowserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42E91B101ECFA72C00AEF125 /* ImageBrowserViewController.m */; };
 /* End PBXBuildFile section */
@@ -36,6 +37,7 @@
 		42740DE21ECF96AE00422A04 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
 		427B52771ED0124F003225F8 /* ImageItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageItem.h; sourceTree = "<group>"; };
 		427B52781ED0124F003225F8 /* ImageItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageItem.m; sourceTree = "<group>"; };
+		429D94651ED4DCF70017C586 /* close-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "close-icon.png"; sourceTree = "<group>"; };
 		42C0ADB11ECFB940004DFF33 /* Quartz.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quartz.framework; path = System/Library/Frameworks/Quartz.framework; sourceTree = SDKROOT; };
 		42E91B0F1ECFA72C00AEF125 /* ImageBrowserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageBrowserViewController.h; sourceTree = "<group>"; };
 		42E91B101ECFA72C00AEF125 /* ImageBrowserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageBrowserViewController.m; sourceTree = "<group>"; };
@@ -102,6 +104,7 @@
 				4231FE611ED24B1B00E76342 /* ImageBrowserViewController.xib */,
 				427B52771ED0124F003225F8 /* ImageItem.h */,
 				427B52781ED0124F003225F8 /* ImageItem.m */,
+				429D94641ED4DCF70017C586 /* Resource */,
 				42740DD91ECF96AE00422A04 /* Supporting Files */,
 			);
 			path = MacpViewer;
@@ -117,6 +120,14 @@
 				42740DE11ECF96AE00422A04 /* Credits.rtf */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		429D94641ED4DCF70017C586 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				429D94651ED4DCF70017C586 /* close-icon.png */,
+			);
+			path = Resource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -172,6 +183,7 @@
 				42740DDD1ECF96AE00422A04 /* InfoPlist.strings in Resources */,
 				42740DE31ECF96AE00422A04 /* Credits.rtf in Resources */,
 				4231FE621ED24B1B00E76342 /* ImageBrowserViewController.xib in Resources */,
+				429D94661ED4DCF70017C586 /* close-icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
