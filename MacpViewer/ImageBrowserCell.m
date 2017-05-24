@@ -23,7 +23,7 @@ static CGColorRef CGColorCreateFromNSColor (CGColorSpaceRef colorSpace, NSColor 
     CALayer *layer = nil;
     
     NSRect cellFrame = [self frame];
-    NSRect imageFrame = [self imageFrame];
+//    NSRect imageFrame = [self imageFrame];
     
     if (type == IKImageBrowserCellForegroundLayer) {
         if ([self cellState] != IKImageStateReady) {

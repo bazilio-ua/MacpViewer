@@ -65,7 +65,6 @@
     }
     
     NSRect browserBounds = [self.browserView visibleRect];
-    //    NSLog(@"browserBounds: %@", NSStringFromRect(browserBounds));
     
     CGFloat browserArea = browserBounds.size.width * browserBounds.size.height;
     CGFloat imagesArea = browserArea / imagesCount;
@@ -79,28 +78,22 @@
         rows = floor(browserBounds.size.height / imageSize);
     }
     
-    //    [self.browserView setCellSize:NSMakeSize(imageSize, imageSize)];
+//    [self.browserView setCellSize:NSMakeSize(imageSize, imageSize)];
     [self.browserView setCellSize:NSMakeSize(imageSize, browserBounds.size.height)];
     
-    
-    
-    
-    
-    
-    
-    //    NSIndexSet *visibleItemIndexes = [self.browserView visibleItemIndexes];
-    //
-    //    
-    //    
-    //    NSUInteger count = [visibleItemIndexes count];
-    //    NSLog(@"count %lu", count);
-    //    
-    //    NSUInteger index = [visibleItemIndexes lastIndex];
-    //    while (index != NSNotFound) {
-    //        NSLog(@"idx %lu", index);
-    //        index = [visibleItemIndexes indexLessThanIndex:index];
-    //    }
-    
+//    NSIndexSet *visibleItemIndexes = [self.browserView visibleItemIndexes];
+//    
+//    NSUInteger count = [visibleItemIndexes count];
+//    NSLog(@"count %lu", count);
+//    
+//    NSUInteger index = [visibleItemIndexes lastIndex];
+//    while (index != NSNotFound) {
+//        id cell = [self.browserView cellForItemAtIndex:index];
+//        NSLog(@"cell: %@", cell);
+//        NSLog(@"idx %lu", index);
+//        
+//        index = [visibleItemIndexes indexLessThanIndex:index]; // that incremented index
+//    }
 }
 
 #pragma mark -
