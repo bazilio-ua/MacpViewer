@@ -47,12 +47,60 @@
     [self.draggedImages addObject:image];
 }
 
-- (void)refreshDataSource {
+#pragma mark -
+#pragma mark Private methods
+
+- (void)updateDatasource {
     [self.images addObjectsFromArray:self.draggedImages];
     [self.draggedImages removeAllObjects];
     
     [self.browserView reloadData];
     [self.browserView setNeedsDisplay:YES];
+}
+
+- (void)updateBrowserView {
+    NSUInteger imagesCount = [self.images count];
+    if (imagesCount == 0) {
+        return;
+    }
+    
+    NSRect browserBounds = [self.browserView visibleRect];
+    //    NSLog(@"browserBounds: %@", NSStringFromRect(browserBounds));
+    
+    CGFloat browserArea = browserBounds.size.width * browserBounds.size.height;
+    CGFloat imagesArea = browserArea / imagesCount;
+    NSUInteger imageSize = (NSUInteger)sqrt(imagesArea);
+    NSUInteger columns = floor(browserBounds.size.width / imageSize);
+    NSUInteger rows = floor(browserBounds.size.height / imageSize);
+    
+    while ((rows * columns) < imagesCount)  {
+        imageSize--;
+        columns = floor(browserBounds.size.width / imageSize);
+        rows = floor(browserBounds.size.height / imageSize);
+    }
+    
+    //    [self.browserView setCellSize:NSMakeSize(imageSize, imageSize)];
+    [self.browserView setCellSize:NSMakeSize(imageSize, browserBounds.size.height)];
+    
+    
+    
+    
+    
+    
+    
+    //    NSIndexSet *visibleItemIndexes = [self.browserView visibleItemIndexes];
+    //
+    //    
+    //    
+    //    NSUInteger count = [visibleItemIndexes count];
+    //    NSLog(@"count %lu", count);
+    //    
+    //    NSUInteger index = [visibleItemIndexes lastIndex];
+    //    while (index != NSNotFound) {
+    //        NSLog(@"idx %lu", index);
+    //        index = [visibleItemIndexes indexLessThanIndex:index];
+    //    }
+    
 }
 
 #pragma mark -
@@ -147,7 +195,8 @@
             [self addImageWithFilePath:[filepaths objectAtIndex:iterator]];
         }
         
-        [self refreshDataSource];
+        [self updateDatasource];
+        [self updateBrowserView];
     }
     
     return YES;
@@ -163,48 +212,8 @@
 }
 
 - (void)windowDidResize:(NSNotification *)notification {
-    NSUInteger imagesCount = [self.images count];
-    if (imagesCount == 0) {
-        return;
-    }
-
-    NSRect browserBounds = [self.browserView visibleRect];
-//    NSLog(@"browserBounds: %@", NSStringFromRect(browserBounds));
     
-    CGFloat browserArea = browserBounds.size.width * browserBounds.size.height;
-    CGFloat imagesArea = browserArea / imagesCount;
-    NSUInteger imageSize = (NSUInteger)sqrt(imagesArea);
-    NSUInteger columns = floor(browserBounds.size.width / imageSize);
-    NSUInteger rows = floor(browserBounds.size.height / imageSize);
-    
-    while ((rows * columns) < imagesCount)  {
-        imageSize--;
-        columns = floor(browserBounds.size.width / imageSize);
-        rows = floor(browserBounds.size.height / imageSize);
-    }
-    
-//    [self.browserView setCellSize:NSMakeSize(imageSize, imageSize)];
-    
-    
-    
-    
-    
-    
-    
-    NSIndexSet *visibleItemIndexes = [self.browserView visibleItemIndexes];
-
-    
-    
-    NSUInteger count = [visibleItemIndexes count];
-    NSLog(@"count %lu", count);
-    
-    NSUInteger index = [visibleItemIndexes lastIndex];
-    while (index != NSNotFound) {
-        NSLog(@"idx %lu", index);
-        index = [visibleItemIndexes indexLessThanIndex:index];
-    }
-    
-    [self.browserView setCellSize:NSMakeSize(imageSize, browserBounds.size.height)];
+    [self updateBrowserView];
 
 }
 

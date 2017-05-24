@@ -22,42 +22,17 @@ static CGColorRef CGColorCreateFromNSColor (CGColorSpaceRef colorSpace, NSColor 
 - (CALayer *)layerForType:(NSString *)type {
     CALayer *layer = nil;
     
-//    NSRect titleFrame = [self titleFrame];
-//    NSRect subtitleFrame = [self subtitleFrame];
-    
     NSRect cellFrame = [self frame];
     NSRect imageFrame = [self imageFrame];
-    NSRect relativeImageFrame = NSMakeRect(imageFrame.origin.x - cellFrame.origin.x, 
-                                           imageFrame.origin.y - cellFrame.origin.y, 
-                                           imageFrame.size.width, 
-                                           imageFrame.size.height);
-
-//    NSLog(@"\n\n\n ************");
-//    
-//    NSLog(@"%@", self);
-//
-//    
-//    NSLog(@"%@", type);
-//
-//    NSLog(@"cellFrame %@", NSStringFromRect(cellFrame));
-//    NSLog(@"imageFrame %@", NSStringFromRect(imageFrame));
-//
-//    NSLog(@"relativeImageFrame %@", NSStringFromRect(relativeImageFrame));
-//
-//    NSLog(@"titleFrame %@", NSStringFromRect(titleFrame));
-//    NSLog(@"subtitleFrame %@", NSStringFromRect(subtitleFrame));
     
     if (type == IKImageBrowserCellForegroundLayer) {
         if ([self cellState] != IKImageStateReady) {
-            return layer;
+            return nil;
         }
         
         layer = [CALayer layer];
         layer.frame = CGRectMake(0, 0, cellFrame.size.width, cellFrame.size.height);
         layer.borderWidth = 1.0;
-        
-
-        
 
         if ([self isSelected]) {
 
@@ -73,23 +48,17 @@ static CGColorRef CGColorCreateFromNSColor (CGColorSpaceRef colorSpace, NSColor 
             
             layer.opacity = 0.5;
             
-            
-            
             NSImage *closeImage = [NSImage imageNamed:@"close-icon.png"];
             NSRect closeRect = NSMakeRect(0, 0, closeImage.size.width, closeImage.size.height);
             
-            CALayer *deleteLayer = [CALayer layer];
-            [deleteLayer setContents:(id)[closeImage CGImageForProposedRect:&closeRect context:NULL hints:NULL]];
-//            deleteLayer.frame = CGRectMake(cellFrame.size.width - 8, 
-//                                           (cellFrame.origin.y + cellFrame.size.height) - 8, 
-//                                           16, 
-//                                           16);
-            deleteLayer.frame = CGRectMake(relativeImageFrame.size.width - 8, 
-                                           (relativeImageFrame.origin.y + relativeImageFrame.size.height) - 8, 
-                                           16, 
-                                           16);
+            CALayer *closeButtonLayer = [CALayer layer];
+            [closeButtonLayer setContents:(id)[closeImage CGImageForProposedRect:&closeRect context:NULL hints:NULL]];
+            closeButtonLayer.frame = CGRectMake(cellFrame.size.width - 8, 
+                                                cellFrame.size.height - 8, 
+                                                16, 
+                                                16);
             
-            [layer addSublayer:deleteLayer];
+            [layer addSublayer:closeButtonLayer];
         }
     }
     

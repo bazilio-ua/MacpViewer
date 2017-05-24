@@ -14,4 +14,6 @@
 @interface ImageBrowserViewController : NSWindowController <NSWindowDelegate>
 @property (nonatomic, assign) IBOutlet ImageBrowserView *browserView;
 
+- (void)addImageWithFilePath:(NSString *)filePath;
+
 @end
